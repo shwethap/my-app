@@ -59,6 +59,7 @@ public void customSoftAssertion()
 {
 	customForVerification cus= new customForVerification();
 	cus.assertTrue(driver.findElements(By.name("WrongLastName")).size()==1,"lastname is missing");
+	cus.assertTrue(driver.findElements(By.name("email")).size()==1, "username name is missing");
 	cus.assertTrue(driver.findElements(By.name("firstName")).size()==1, "first name is missing");
 	cus.assertTrue(driver.findElements(By.name("Wrongphone")).size()==1, "Phone field is missing");
 }
