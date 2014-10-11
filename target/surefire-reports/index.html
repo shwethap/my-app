@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Wikipidea_Test">
+              <span class="suite-name border-failed">Wikipidea Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Wikipidea_Test">
+                    <span>C:\Users\shwetha p\my-app\totry.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Wikipidea_Test">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Wikipidea_Test">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Wikipidea_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Wikipidea_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Wikipidea_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Wikipidea_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Wikipidea_Test" class="hide-methods failed suite-Wikipidea_Test"> (hide)</a> <!-- hide-methods failed suite-Wikipidea_Test -->
+                      <a href="#" panel-name="suite-Wikipidea_Test" class="show-methods failed suite-Wikipidea_Test"> (show)</a> <!-- show-methods failed suite-Wikipidea_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Wikipidea_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Wikipidea_Test" title="com.mycompany.test.WebDriverTest" hash-for-method="HardAssertion">HardAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Wikipidea_Test" title="com.mycompany.test.WebDriverTest" hash-for-method="softAssertion">softAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Wikipidea_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Wikipidea_Test" class="hide-methods passed suite-Wikipidea_Test"> (hide)</a> <!-- hide-methods passed suite-Wikipidea_Test -->
+                      <a href="#" panel-name="suite-Wikipidea_Test" class="show-methods passed suite-Wikipidea_Test"> (show)</a> <!-- show-methods passed suite-Wikipidea_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Wikipidea_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Wikipidea_Test" title="com.mycompany.test.WebDriverTest" hash-for-method="RegistrationTestNew(com.mycompany.DataObject.RegistrationData@215394d9)">RegistrationTestNew(com.mycompany.DataObject.RegistrationData@215394d9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Wikipidea_Test" title="com.mycompany.test.WebDriverTest" hash-for-method="RegistrationTestNew(com.mycompany.DataObject.RegistrationData@32215e61)">RegistrationTestNew(com.mycompany.DataObject.RegistrationData@32215e61)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Wikipidea_Test" title="com.mycompany.test.WebDriverTest" hash-for-method="customSoftAssertion">customSoftAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Wikipidea_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Wikipidea_Test" class="panel Wikipidea_Test">
+          <div class="suite-Wikipidea_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.mycompany.test.WebDriverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HardAssertion">
+                  </a> <!-- HardAssertion -->
+                  <span class="method-name">HardAssertion</span>
+                  <div class="stack-trace">java.lang.AssertionError: lastname is missing expected [true] but found [false]
+	at com.mycompany.test.WebDriverTest.HardAssertion(WebDriverTest.java:39)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="softAssertion">
+                  </a> <!-- softAssertion -->
+                  <span class="method-name">softAssertion</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: f.QueryInterface is not a function
+Command duration or timeout: 225 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;shwetha&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 271bfcb9-0faf-4b8c-a50b-a0e6a709180b
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at com.mycompany.test.WebDriverTest.softAssertion(WebDriverTest.java:44)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: f.QueryInterface is not a function
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;shwetha&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.get(file:///C:/Users/SHWETH~1/AppData/Local/Temp/anonymous2765076476150747469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9481:9)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/SHWETH~1/AppData/Local/Temp/anonymous2765076476150747469webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:16)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/SHWETH~1/AppData/Local/Temp/anonymous2765076476150747469webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11617:7)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/SHWETH~1/AppData/Local/Temp/anonymous2765076476150747469webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11559:5)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Wikipidea_Test-class-failed -->
+          <div class="suite-Wikipidea_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.test.WebDriverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegistrationTestNew(com.mycompany.DataObject.RegistrationData@215394d9)">
+                  </a> <!-- RegistrationTestNew(com.mycompany.DataObject.RegistrationData@215394d9) -->
+                  <span class="method-name">RegistrationTestNew</span>
+                  <span class="parameters">(com.mycompany.DataObject.RegistrationData@215394d9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegistrationTestNew(com.mycompany.DataObject.RegistrationData@32215e61)">
+                  </a> <!-- RegistrationTestNew(com.mycompany.DataObject.RegistrationData@32215e61) -->
+                  <span class="method-name">RegistrationTestNew</span>
+                  <span class="parameters">(com.mycompany.DataObject.RegistrationData@32215e61)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="customSoftAssertion">
+                  </a> <!-- customSoftAssertion -->
+                  <span class="method-name">customSoftAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Wikipidea_Test-class-passed -->
+        </div> <!-- panel Wikipidea_Test -->
+        <div panel-name="test-xml-Wikipidea_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\shwetha p\my-app\totry.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Wikipidea Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Wiki in firefox&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;f&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.mycompany.test.WebDriverTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;RegistrationTestNew&quot;/&gt;
+          &lt;include name=&quot;HardAssertion&quot;/&gt;
+          &lt;include name=&quot;softAssertion&quot;/&gt;
+          &lt;include name=&quot;customSoftAssertion&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.mycompany.test.WebDriverTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Wiki in firefox --&gt;
+&lt;/suite&gt; &lt;!-- Wikipidea Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Wikipidea_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Wikipidea Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Wiki in firefox (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Wikipidea_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Wikipidea Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Wikipidea_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Wikipidea Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Wikipidea_Test');
+function tableData_Wikipidea_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'RegistrationTestNew')
+data.setCell(0, 2, 'com.mycompany.test.WebDriverTest')
+data.setCell(0, 3, 36429);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'RegistrationTestNew')
+data.setCell(1, 2, 'com.mycompany.test.WebDriverTest')
+data.setCell(1, 3, 15748);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'HardAssertion')
+data.setCell(2, 2, 'com.mycompany.test.WebDriverTest')
+data.setCell(2, 3, 3049);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'softAssertion')
+data.setCell(3, 2, 'com.mycompany.test.WebDriverTest')
+data.setCell(3, 3, 298);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'customSoftAssertion')
+data.setCell(4, 2, 'com.mycompany.test.WebDriverTest')
+data.setCell(4, 3, 138);
+window.suiteTableData['Wikipidea_Test']= { tableData: data, tableDiv: 'times-div-Wikipidea_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <div id="times-div-Wikipidea_Test">
+              </div> <!-- times-div-Wikipidea_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Wikipidea_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Wikipidea Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">customSoftAssertion</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">lastname is missing<br></span>
+                <span class="reporter-method-output">first name is missing<br></span>
+                <span class="reporter-method-output">Phone field is missing<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Wikipidea_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Wikipidea_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.test.WebDriverTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser(f)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegistrationTestNew(com.mycompany.DataObject.RegistrationData@215394d9)</span>
+                <span class="method-start">23640 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser([TestResult name=RegistrationTestNew status=SUCCESS method=WebDriverTest.RegistrationTestNew(com.myc...)</span>
+                <span class="method-start">60069 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser(f)</span>
+                <span class="method-start">60617 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegistrationTestNew(com.mycompany.DataObject.RegistrationData@32215e61)</span>
+                <span class="method-start">79774 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser([TestResult name=RegistrationTestNew status=SUCCESS method=WebDriverTest.RegistrationTestNew(com.myc...)</span>
+                <span class="method-start">95523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser(f)</span>
+                <span class="method-start">96092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">HardAssertion</span>
+                <span class="method-start">117662 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser([TestResult name=HardAssertion status=FAILURE method=WebDriverTest.HardAssertion()[pri:0, instance:c...)</span>
+                <span class="method-start">120721 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser(f)</span>
+                <span class="method-start">121626 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">softAssertion</span>
+                <span class="method-start">146393 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser([TestResult name=softAssertion status=FAILURE method=WebDriverTest.softAssertion()[pri:0, instance:c...)</span>
+                <span class="method-start">146720 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser(f)</span>
+                <span class="method-start">147531 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">customSoftAssertion</span>
+                <span class="method-start">168597 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser([TestResult name=customSoftAssertion status=SUCCESS method=WebDriverTest.customSoftAssertion()[pri:0...)</span>
+                <span class="method-start">168736 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

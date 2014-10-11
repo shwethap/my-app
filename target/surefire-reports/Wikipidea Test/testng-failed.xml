@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Wikipidea Test]" parallel="tests">
+  <parameter name="Browser" value="f"/>
+  <test name="Wiki in firefox(failed)" parallel="tests">
+    <parameter name="Browser" value="f"/>
+    <classes>
+      <class name="com.mycompany.test.WebDriverTest">
+        <methods>
+          <include name="HardAssertion"/>
+          <include name="openbrowser"/>
+          <include name="softAssertion"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- com.mycompany.test.WebDriverTest -->
+    </classes>
+  </test> <!-- Wiki in firefox(failed) -->
+</suite> <!-- Failed suite [Wikipidea Test] -->

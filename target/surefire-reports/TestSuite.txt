@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 171.645 sec <<< FAILURE! - in TestSuite
+HardAssertion(com.mycompany.test.WebDriverTest)  Time elapsed: 3.063 sec  <<< FAILURE!
+java.lang.AssertionError: lastname is missing expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.mycompany.test.WebDriverTest.HardAssertion(WebDriverTest.java:39)
+
+softAssertion(com.mycompany.test.WebDriverTest)  Time elapsed: 0.33 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: f.QueryInterface is not a function
+Command duration or timeout: 225 milliseconds
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'shwetha', ip: '192.168.0.2', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 271bfcb9-0faf-4b8c-a50b-a0e6a709180b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at com.mycompany.test.WebDriverTest.softAssertion(WebDriverTest.java:44)
+Caused by: org.openqa.selenium.WebDriverException: f.QueryInterface is not a function
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'shwetha', ip: '192.168.0.2', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_20'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.get(file:///C:/Users/SHWETH~1/AppData/Local/Temp/anonymous2765076476150747469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9481:9)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/SHWETH~1/AppData/Local/Temp/anonymous2765076476150747469webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/SHWETH~1/AppData/Local/Temp/anonymous2765076476150747469webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11617:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/SHWETH~1/AppData/Local/Temp/anonymous2765076476150747469webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11559:5)
+

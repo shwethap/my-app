@@ -1,0 +1,3 @@
+com\mycompany\DataObject\RegistrationData.class
+com\mycompany\Pagefactory\RegistrationNew.class
+com\mycompany\Pagefactory\returnPageObject.class
